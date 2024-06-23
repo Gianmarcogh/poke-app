@@ -14,7 +14,7 @@ export const routes: RouteObject[] = [
   },
   {
     path: '/pokemon/:name',
-    element: <Pokemon />, 
+    element: <Pokemon />,
   },
   {
     path: '/pokemons',

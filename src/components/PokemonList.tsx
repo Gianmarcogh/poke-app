@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { getPokemons } from "../data/PokemonData";
+import { getPokemons } from "../data/pokemonData";
 import { Pokemon } from "../models/pokemon";
 import { Button } from "primereact/button";
 import { useNavigate } from "react-router-dom";
@@ -65,8 +65,6 @@ export const PokemonList: React.FC<PokemonListProps> = ({ page, onPageChange }) 
             <th scope="col" className=" px-6 py-4">Name</th>
             <th scope="col" className=" px-6 py-4">Image</th>
             <th scope="col" className=" px-6 py-4">Type</th>
-            <th scope="col" className=" px-6 py-4">Weight(kg)</th>
-            <th scope="col" className=" px-6 py-4">Height(m)</th>
             <th scope="col" className=" px-6 py-4">Details</th>
           </tr>
         </thead>
@@ -83,8 +81,6 @@ export const PokemonList: React.FC<PokemonListProps> = ({ page, onPageChange }) 
                   <img key={type.id} className="m-auto" src={`/images/types/${type.name}.png`} alt={type.name}></img>
                 ))}
               </td>
-              <td className="whitespace-nowrap px-4">{pokemon.weight}</td>
-              <td className="whitespace-nowrap px-4">{pokemon.height}</td>
               <td className="whitespace-nowrap px-4">
                 <Button label="Details" severity="info" size="small" onClick={event => onPokemonDetails(event, pokemon.name)}/>
               </td>

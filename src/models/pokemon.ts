@@ -8,4 +8,18 @@ export interface Pokemon {
   }[];
   weight: number;
   height: number;
+  stats: PokemonStats
+  moves: {
+    id: number;
+    name: string;
+  }[];
+}
+
+export interface PokemonStats {
+  hp: number;
+  attack: number;
+  defense: number;
+  speed: number;
+  specialAttack: number;
+  specialDefense: number;
 }

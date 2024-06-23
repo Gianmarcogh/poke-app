@@ -1,7 +1,7 @@
 import { Suspense } from "react"
 import { Route, Routes } from "react-router-dom"
-import { Header } from "./components/Header"
 import { routes } from "./routes"
+import { Header } from "./components"
 
 export const PokeApp = () => {
 

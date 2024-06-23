@@ -1,8 +1,8 @@
 import React from "react";
 
 import { Button } from "primereact/button";
-import { ParticlesBg } from "../components/ParticlesBg";
 import { useNavigate } from "react-router-dom";
+import { ParticlesBg } from "../components";
 
 export const Home: React.FC = () => {
   const navigate = useNavigate();

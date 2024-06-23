@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import { PokemonList } from "../components/PokemonList";
 import { useSearchParams } from "react-router-dom";
+import { PokemonList } from "../components";
 
 export const Pokemons: React.FC = () => {
   const [searchParams, setSearchParams] = useSearchParams();
